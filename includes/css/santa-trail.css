@@ -43,7 +43,8 @@
   position: fixed;
   top: 0;
   z-index: -4;
-  background: linear-gradient(#010518 0%, #080d37 80%, #27318a 100%);
+  background: rgb(170,0,0);
+  background: radial-gradient(circle, rgba(170,0,0,1) 0%, rgba(110,0,0,1) 57%);
 }
 
 .snowflake {
