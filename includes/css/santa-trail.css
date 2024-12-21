@@ -607,7 +607,6 @@
 }
 .project-gallery .fancy-box-content{
 	width: 100%;
-	height: 150px;
 	overflow: hidden;
 }
 .project-gallery .fancy-box-content img{
@@ -630,4 +629,46 @@
     color: #FFF;
     line-height: 1.9em;
     font-size: 15px;
+}
+
+.box {
+	background: linear-gradient(to right, gold, darkorange);
+	color: white;
+	--width: 100px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2);
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+}
+
+.box:hover {
+	transform: perspective(500px) rotateY(15deg);
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box:hover::before {
+	left: 100%;
+}
+
+.box a {
+    text-decoration: none !important;
+    color: #FFF !important;
 }
