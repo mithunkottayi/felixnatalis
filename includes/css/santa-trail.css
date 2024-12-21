@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap');
 :root{
 --primary-font: "Pacifico", serif;
 --secondary-font: "Big Shoulders Text", sans-serif;
@@ -18,6 +19,13 @@
     font-weight: 400;
     font-style: normal;
 } 
+.anek-malayalam {
+    font-family: "Anek Malayalam", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 .body-main{
   display: flex;
   flex-direction: column;
@@ -613,12 +621,13 @@
 .logo-santa {
     padding-top: 60px;
 }
-.logo-santa h2 {
+.logo-santa h3 {
     color: #FFF;
+    font-weight: 600;
+    font-size: 24px;
 }
 .logo-santa p {
     color: #FFF;
     line-height: 1.9em;
-    font-size: 17px;
-    text-align: justify;
+    font-size: 15px;
 }
